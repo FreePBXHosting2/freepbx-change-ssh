@@ -14,8 +14,8 @@ NOW=$(date +"%m_%d_%Y")
 cp /etc/ssh/sshd_config /etc/ssh/sshd_config.inst.bckup.$NOW
 
 # Apply changes to sshd_config
-sed -i -e "s/\#Port 22/Port $SSHPORT/" /etc/ssh/sshd_config
-
+# sed -i -e "s/\#Port 22/Port $SSHPORT/" /etc/ssh/sshd_config
+sed -i -e "/Port /c\Port $SSHPORT" /etc/ssh/sshd_config
 echo -e "Restarting SSH in 5 seconds. Please wait.\n"
 sleep 5
 
