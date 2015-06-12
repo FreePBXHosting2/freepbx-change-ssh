@@ -1,5 +1,5 @@
 # freepbx-change-ssh
-Change the SSH port in FreePBX
+Change the SSH port on a FreePBX server
 
 To run the script, login as root via SSH and run the following command:
 
