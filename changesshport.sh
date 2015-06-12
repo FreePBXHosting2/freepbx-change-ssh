@@ -6,6 +6,7 @@
 #############################################
 
 # Prompt user for desired port
+echo ""
 echo -n "Please enter the port you would like SSH to run on > "
 read SSHPORT
 echo ""
@@ -22,4 +23,5 @@ sleep 5
 # Restart SSH service
 service sshd restart
 
+echo ""
 echo -e "The SSH port has been changed to $SSHPORT. Please login using that port to test.\n"
